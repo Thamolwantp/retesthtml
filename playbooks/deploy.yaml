@@ -5,9 +5,9 @@
   tasks:
     - name: Creating the Container
       docker_container:
-        name: team33-neogym-container  # docker container name
-        image: team33-neogym:latest  # docker image name
+        name: 66022679-container  # docker container name
+        image: 66022679:latest  # docker image name
         ports:
-          - "33:80"  # ด้านซ้ายคือ port ที่รับจาก browser, ด้านขวาคือ port ของ docker (ปกติใช้ 80 ถ้าเป็น nextjs project ก็ 3000)
+          - "11047:80"  # ด้านซ้ายคือ port ที่รับจาก browser, ด้านขวาคือ port ของ docker (ปกติใช้ 80 ถ้าเป็น nextjs project ก็ 3000)
         state: started
         restart: true
